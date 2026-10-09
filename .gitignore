@@ -1,0 +1,44 @@
+# Unity generated
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+
+# IDE
+.vs/
+.vscode/
+.idea/
+*.csproj
+*.sln
+*.suo
+*.user
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Builds
+*.apk
+*.aab
+*.unitypackage
+crashlytics-build.properties
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large park content usually lives outside git (copy onto the device instead)
+/Assets/StreamingAssets/Parks/*/
+!/Assets/StreamingAssets/Parks/_Template/
+
+# Unity build tooling / IDE solution files
+.utmp/
+*.slnx

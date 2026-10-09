@@ -1,0 +1,26 @@
+<!-- Keeps engine classes that are only created indirectly (GameObject.CreatePrimitive, AR Foundation)
+     from being stripped out of Android builds. Without these the demo parks fail to build their geometry. -->
+<linker>
+  <assembly fullname="UnityEngine.CoreModule">
+    <type fullname="UnityEngine.MeshFilter" preserve="all" />
+    <type fullname="UnityEngine.MeshRenderer" preserve="all" />
+    <type fullname="UnityEngine.TextMesh" preserve="all" />
+    <type fullname="UnityEngine.LineRenderer" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.PhysicsModule">
+    <type fullname="UnityEngine.BoxCollider" preserve="all" />
+    <type fullname="UnityEngine.SphereCollider" preserve="all" />
+    <type fullname="UnityEngine.CapsuleCollider" preserve="all" />
+    <type fullname="UnityEngine.MeshCollider" preserve="all" />
+    <type fullname="UnityEngine.CharacterController" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.TextRenderingModule">
+    <type fullname="UnityEngine.TextMesh" preserve="all" />
+    <type fullname="UnityEngine.Font" preserve="all" />
+  </assembly>
+  <assembly fullname="Unity.XR.ARFoundation" preserve="all" />
+  <assembly fullname="Unity.XR.ARCore" preserve="all" />
+  <assembly fullname="Unity.XR.CoreUtils" preserve="all" />
+  <assembly fullname="Unity.InputSystem" preserve="all" />
+  <assembly fullname="glTFast" preserve="all" />
+</linker>

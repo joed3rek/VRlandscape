@@ -1,0 +1,31 @@
+{
+  "name": "Riverside Park",
+  "description": "Phase 1 landscape proposal",
+  "model": "model.glb",
+  "scale": 1.0,
+  "collisions": true,
+  "spawn": { "position": [0, 0, -40], "yaw": 0 },
+  "startPanorama": "entrance",
+  "panoramas": [
+    {
+      "id": "entrance",
+      "name": "Main Entrance",
+      "image": "panoramas/entrance.jpg",
+      "position": [0, 1.6, -40],
+      "yawOffset": 0,
+      "hotspots": [
+        { "target": "plaza", "label": "To the Plaza", "yaw": 5, "pitch": -8 }
+      ]
+    },
+    {
+      "id": "plaza",
+      "name": "Central Plaza",
+      "image": "panoramas/plaza.jpg",
+      "position": [0, 1.6, 0],
+      "yawOffset": 0,
+      "hotspots": [
+        { "target": "entrance", "auto": true }
+      ]
+    }
+  ]
+}
